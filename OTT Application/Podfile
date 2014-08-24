@@ -1,0 +1,29 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, "6.0"
+
+target "OTT Application" do
+pod 'iCarousel'
+pod 'SVProgressHUD'
+pod 'Reachability'
+pod 'AFNetworking'
+pod 'JSBadgeView'
+pod 'MTStatusBarOverlay'
+pod 'PKRevealController'
+pod 'SDWebImage'
+#pod 'JSONKit'
+pod 'JSONKit', podspec: 'JSONKit.podspec'
+pod 'Facebook-iOS-SDK'
+pod 'AFDownloadRequestOperation', '~> 2.0'
+pod 'CMPopTipView', '~> 2.2'
+#pod 'DCRoundSwitch', '~> 0.0'
+pod 'FXImageView'
+pod 'FXBlurView'
+pod 'ABContactHelper', '~> 0.1'
+pod 'UIImage+Additions', '~> 1.1'
+pod 'FTCoreText', '~> 1.0.1'
+pod 'JSONModel'
+pod 'MagicalRecord', '~> 2.2'
+
+end
+
+

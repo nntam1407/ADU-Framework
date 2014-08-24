@@ -1,0 +1,21 @@
+//
+//  UIView+Utilities.h
+//  TutorMe
+//
+//  Created by Emerson Malca on 6/10/12.
+//  Copyright (c) 2012 Luma Education. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UIView (Utilities)
+
+- (UIImage *)screenshot;
+
+- (void)copyShadowPropertiesFromView:(UIView *)view;
+
+- (UIView *)findFirstResponder;
+
+- (void)adjustAllSubviewsWithHandler:(void(^)(UIView *subview))handler;
+
+@end

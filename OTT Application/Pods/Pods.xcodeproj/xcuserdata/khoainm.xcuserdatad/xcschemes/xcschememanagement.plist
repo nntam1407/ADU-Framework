@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-OTT Application-ABContactHelper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-AFDownloadRequestOperation.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-CMPopTipView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-FTCoreText.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-FXBlurView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-FXImageView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-Facebook-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-JSBadgeView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-JSONKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-JSONModel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-MTStatusBarOverlay.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-MagicalRecord.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-PKRevealController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-Reachability.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-UIImage+Additions.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application-iCarousel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-OTT Application.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1333C4CD9390447C824E7F73</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>13946757B82B49BB9B802691</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1D68BF4A65E641388193383B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>36EE894233D14FAB9F9AFA9B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>458D48B75BBD47C59B1F26B4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>51AD33778A1646ABB6154780</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>598ADC473CFA4DD88B4E640B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>673224F5F2B24536AC7F2A24</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>682E06DC8C8D4FBCA9920652</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68FD33946B69445D95BE7279</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74F082F6E3BC4B2799F26F50</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8B53069A22E5410D949DD727</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9FBF3ABCD3AF4BF28EEB150C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AFD6CF3300EE43839986483D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C537D52F68124D6099C66994</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D1B351C423B644B8A850D47D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DDA8FBBF8A2149D4AB82F482</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DDB76AF24FD742B48D456A56</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E87B2D8FE9FE40C3AEF7081A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EF2A51E51D2540B38776AE38</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F9A112226DD14D38A27588B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

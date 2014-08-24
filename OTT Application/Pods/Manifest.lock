@@ -1,0 +1,96 @@
+PODS:
+  - ABContactHelper (0.1)
+  - AFDownloadRequestOperation (2.0.1):
+    - AFNetworking (~> 2.0)
+  - AFNetworking (2.3.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.3.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.3.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.3.1)
+  - AFNetworking/Security (2.3.1)
+  - AFNetworking/Serialization (2.3.1)
+  - AFNetworking/UIKit (2.3.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Bolts (1.1.2)
+  - CMPopTipView (2.2.0)
+  - Facebook-iOS-SDK (3.17.0):
+    - Bolts
+  - FTCoreText (1.0.1)
+  - FXBlurView (1.6.2)
+  - FXImageView (1.3.3)
+  - iCarousel (1.8)
+  - JSBadgeView (1.3.2)
+  - JSONKit (1.5pre)
+  - JSONModel (1.0.1)
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core
+  - MagicalRecord/Core (2.2)
+  - MTStatusBarOverlay (0.9.1)
+  - PKRevealController (2.0.6)
+  - Reachability (3.1.1)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.7.1)
+  - SVProgressHUD (1.0)
+  - UIImage+Additions (1.1.0)
+
+DEPENDENCIES:
+  - ABContactHelper (~> 0.1)
+  - AFDownloadRequestOperation (~> 2.0)
+  - AFNetworking
+  - CMPopTipView (~> 2.2)
+  - Facebook-iOS-SDK
+  - FTCoreText (~> 1.0.1)
+  - FXBlurView
+  - FXImageView
+  - iCarousel
+  - JSBadgeView
+  - JSONKit (from `JSONKit.podspec`)
+  - JSONModel
+  - MagicalRecord (~> 2.2)
+  - MTStatusBarOverlay
+  - PKRevealController
+  - Reachability
+  - SDWebImage
+  - SVProgressHUD
+  - UIImage+Additions (~> 1.1)
+
+EXTERNAL SOURCES:
+  JSONKit:
+    :podspec: JSONKit.podspec
+
+SPEC CHECKSUMS:
+  ABContactHelper: e3d3eb49710a93fe91059ca6b46e3b7271a821b4
+  AFDownloadRequestOperation: e223a65bc56fb8e6ae5d289b649c7bcc6b307f0d
+  AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3
+  Bolts: 2635e8698a630774689441047f3465d78c48d485
+  CMPopTipView: f731ea93316c4f964d3d5d8e71b4ba0ae30bf5a4
+  Facebook-iOS-SDK: f20274d809f112ba540842e2b6cbe50128d51b7b
+  FTCoreText: 399795cfe9e000435a25be3bef95f02c298528e9
+  FXBlurView: 47496afc9160097fa34af35fc4b310bd85d65dca
+  FXImageView: 0f3496c1be409a450a424f2c06b448fd27cbb9cc
+  iCarousel: cf77aea48dfcde9a0cd85569a1d8a9b6dd543bd7
+  JSBadgeView: 75bec79d76e0eb01d57c9ce75b7c5ea8d6707955
+  JSONKit: 0e771281de49d7019c0bfc883e544549528a328b
+  JSONModel: 634100aaacbd89811bc8a03da209356e5989c569
+  MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
+  MTStatusBarOverlay: f1fef7143ed3e9ce3d2c6ee3f297079e5cab905f
+  PKRevealController: 4f175a432ad868c806dce1ebb3fd8a35d228bdb5
+  Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  SVProgressHUD: 5034c6e22b8c2ca3e09402e48d41ed0340aa1c50
+  UIImage+Additions: 66ee88773215955a2703ea31b790fdf3438303d9
+
+COCOAPODS: 0.33.1

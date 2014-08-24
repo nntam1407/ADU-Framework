@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="r1h-KB-XZx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--PortraitNFL League View Controller-->
+        <scene sceneID="1cL-Tt-NpT">
+            <objects>
+                <viewController storyboardIdentifier="SLPortraitNFLLeagueViewController" id="r1h-KB-XZx" customClass="SLPortraitNFLLeagueViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OcT-02-v9N"/>
+                        <viewControllerLayoutGuide type="bottom" id="eed-l1-C7g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tHm-b5-jaA">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gym_Cropped.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1JL-lM-w2M">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1024" id="H6b-Nq-GtE"/>
+                                    <constraint firstAttribute="width" constant="768" id="x2U-z5-vdA"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1X-Wz-Onu" customClass="SLiPadLeagueMainBarSlideView">
+                                <rect key="frame" x="0.0" y="444" width="768" height="67"/>
+                                <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.12941176470588237" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="dvZ-hC-pds"/>
+                                    <constraint firstAttribute="width" constant="768" id="jrC-Q9-sXn"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGr-3B-DRf" customClass="SLPortraitLeagueTeamBarSlideView">
+                                <rect key="frame" x="0.0" y="874" width="768" height="130"/>
+                                <color key="backgroundColor" red="0.090196078431372548" green="0.094117647058823528" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="768" id="VMv-TJ-LEb"/>
+                                    <constraint firstAttribute="height" constant="130" id="dZJ-X6-RMA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ifc-xd-chm" customClass="SLCarouselView">
+                                <rect key="frame" x="0.0" y="64" width="768" height="380"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="768" id="BcR-ls-nK9"/>
+                                    <constraint firstAttribute="height" constant="380" id="zgw-Xa-k29"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="s1X-Wz-Onu" firstAttribute="top" secondItem="ifc-xd-chm" secondAttribute="bottom" id="5G5-38-DUQ"/>
+                            <constraint firstAttribute="centerX" secondItem="s1X-Wz-Onu" secondAttribute="centerX" id="G3Q-yq-BNU"/>
+                            <constraint firstItem="ifc-xd-chm" firstAttribute="top" secondItem="tHm-b5-jaA" secondAttribute="top" constant="64" id="NkA-1c-EUU"/>
+                            <constraint firstItem="s1X-Wz-Onu" firstAttribute="centerX" secondItem="ifc-xd-chm" secondAttribute="centerX" id="RlZ-ZJ-pfL"/>
+                            <constraint firstItem="1JL-lM-w2M" firstAttribute="bottom" secondItem="eed-l1-C7g" secondAttribute="top" id="YKi-8H-MgA"/>
+                            <constraint firstItem="s1X-Wz-Onu" firstAttribute="centerX" secondItem="hGr-3B-DRf" secondAttribute="centerX" id="bo7-iS-8vb"/>
+                            <constraint firstItem="s1X-Wz-Onu" firstAttribute="centerX" secondItem="1JL-lM-w2M" secondAttribute="centerX" id="gRg-fv-j7g"/>
+                            <constraint firstItem="hGr-3B-DRf" firstAttribute="bottom" secondItem="eed-l1-C7g" secondAttribute="top" constant="-20" id="j1T-dO-r4z"/>
+                            <constraint firstAttribute="centerX" secondItem="hGr-3B-DRf" secondAttribute="centerX" id="k5D-d2-cj6"/>
+                            <constraint firstAttribute="centerX" secondItem="1JL-lM-w2M" secondAttribute="centerX" id="me7-gh-L8J"/>
+                            <constraint firstAttribute="centerX" secondItem="ifc-xd-chm" secondAttribute="centerX" id="rm6-zJ-bbX"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="1JL-lM-w2M" id="dKx-PP-oeh"/>
+                        <outlet property="carousel" destination="ifc-xd-chm" id="Vm3-f8-pkS"/>
+                        <outlet property="mainBarView" destination="s1X-Wz-Onu" id="maq-wX-I4E"/>
+                        <outlet property="teamsBarView" destination="hGr-3B-DRf" id="hpQ-dz-gyu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XJ1-Qw-eb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1563" y="-2805"/>
+        </scene>
+        <!--LandscapeNFL League View Controller-->
+        <scene sceneID="hGt-vd-CNL">
+            <objects>
+                <viewController storyboardIdentifier="SLLandscapeNFLLeagueViewController" id="Pb3-gY-29U" customClass="SLLandscapeNFLLeagueViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qRA-8G-WwR"/>
+                        <viewControllerLayoutGuide type="bottom" id="qLz-MH-NGu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nUw-H5-C3f">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gym_Cropped.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8Hy-mU-fLz">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="768" id="6PK-0e-gjd"/>
+                                    <constraint firstAttribute="width" constant="1024" id="EhT-r9-Rd0"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHY-Ks-IWA" customClass="SLCarouselView">
+                                <rect key="frame" x="0.0" y="64" width="1024" height="235"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="235" id="9fS-uQ-hkb"/>
+                                    <constraint firstAttribute="width" constant="1024" id="bF6-98-ZWN"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2K-cS-FTq">
+                                <rect key="frame" x="0.0" y="299" width="1024" height="469"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSK-d6-OLD">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="67"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYd-1X-koR">
+                                                <rect key="frame" x="0.0" y="0.0" width="218" height="67"/>
+                                                <subviews>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NFL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4m7-5u-a0N">
+                                                        <rect key="frame" x="20" y="10" width="161" height="27"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEAMS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KE2-ZJ-ho0">
+                                                        <rect key="frame" x="20" y="36" width="62" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="62" id="q1S-yM-Uzg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.83921568627450982" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="4m7-5u-a0N" firstAttribute="leading" secondItem="sYd-1X-koR" secondAttribute="leading" constant="20" id="AjN-Yo-tWY"/>
+                                                    <constraint firstItem="4m7-5u-a0N" firstAttribute="top" secondItem="sYd-1X-koR" secondAttribute="top" constant="10" id="CM8-qL-Ugo"/>
+                                                    <constraint firstItem="KE2-ZJ-ho0" firstAttribute="leading" secondItem="4m7-5u-a0N" secondAttribute="leading" id="EJU-wF-fgb"/>
+                                                    <constraint firstItem="KE2-ZJ-ho0" firstAttribute="top" secondItem="sYd-1X-koR" secondAttribute="top" constant="36" id="TFf-vl-0P6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4m7-5u-a0N" secondAttribute="trailing" constant="37" id="f0G-lV-z4d"/>
+                                                    <constraint firstAttribute="bottom" secondItem="KE2-ZJ-ho0" secondAttribute="bottom" constant="10" id="wTt-fi-5mP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="4m7-5u-a0N" secondAttribute="bottom" constant="30" id="wlR-Wb-yjU"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdW-VS-pga" customClass="SLiPadLeagueMainBarSlideView">
+                                                <rect key="frame" x="218" y="0.0" width="806" height="67"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="zdW-VS-pga" firstAttribute="leading" secondItem="aSK-d6-OLD" secondAttribute="leading" constant="218" id="5Za-RZ-8ZS"/>
+                                            <constraint firstItem="zdW-VS-pga" firstAttribute="top" secondItem="aSK-d6-OLD" secondAttribute="top" id="KI4-gX-P0t"/>
+                                            <constraint firstAttribute="bottom" secondItem="sYd-1X-koR" secondAttribute="bottom" id="O8Z-3M-VBc"/>
+                                            <constraint firstItem="zdW-VS-pga" firstAttribute="leading" secondItem="sYd-1X-koR" secondAttribute="trailing" id="Q72-KL-JU5"/>
+                                            <constraint firstItem="sYd-1X-koR" firstAttribute="bottom" secondItem="zdW-VS-pga" secondAttribute="bottom" id="XlI-oZ-bm3"/>
+                                            <constraint firstItem="sYd-1X-koR" firstAttribute="top" secondItem="zdW-VS-pga" secondAttribute="top" id="kvL-iH-gqW"/>
+                                            <constraint firstItem="sYd-1X-koR" firstAttribute="leading" secondItem="aSK-d6-OLD" secondAttribute="leading" id="rGi-sM-nDC"/>
+                                            <constraint firstAttribute="trailing" secondItem="zdW-VS-pga" secondAttribute="trailing" id="wEy-Pw-qM9"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9J-aF-eE6" customClass="SLLandScapeLeagueTeamBarSlideView">
+                                        <rect key="frame" x="0.0" y="67" width="218" height="402"/>
+                                        <color key="backgroundColor" red="0.090196078431372548" green="0.094117647058823528" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sid-eA-f3U" userLabel="Content Views">
+                                        <rect key="frame" x="218" y="67" width="806" height="402"/>
+                                        <subviews>
+                                            <view tag="99" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlM-yz-fXP">
+                                                <rect key="frame" x="0.0" y="0.0" width="806" height="402"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohF-Cx-p5F">
+                                                        <rect key="frame" x="0.0" y="0.0" width="806" height="402"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aid-Ls-St0" customClass="SLScoreTimeMenuView">
+                                                                <rect key="frame" x="16" y="16" width="75" height="370"/>
+                                                                <color key="backgroundColor" red="0.090196078431372548" green="0.094117647058823528" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tMf-bI-fFL" customClass="SLNFLLeagueScoreSlideView">
+                                                                <rect key="frame" x="91" y="16" width="720" height="370"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.75" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="aid-Ls-St0" firstAttribute="centerY" secondItem="ohF-Cx-p5F" secondAttribute="centerY" id="15U-XO-8MH"/>
+                                                            <constraint firstItem="tMf-bI-fFL" firstAttribute="leading" secondItem="ohF-Cx-p5F" secondAttribute="leading" constant="91" id="2du-nX-sem"/>
+                                                            <constraint firstItem="tMf-bI-fFL" firstAttribute="bottom" secondItem="aid-Ls-St0" secondAttribute="bottom" id="E2M-Ki-glF"/>
+                                                            <constraint firstItem="aid-Ls-St0" firstAttribute="top" secondItem="tMf-bI-fFL" secondAttribute="top" id="Idh-eG-8UK"/>
+                                                            <constraint firstAttribute="trailing" secondItem="tMf-bI-fFL" secondAttribute="trailing" constant="-5" id="Neu-HV-91j"/>
+                                                            <constraint firstItem="tMf-bI-fFL" firstAttribute="leading" secondItem="aid-Ls-St0" secondAttribute="trailing" id="UZY-gP-P0A"/>
+                                                            <constraint firstItem="aid-Ls-St0" firstAttribute="leading" secondItem="ohF-Cx-p5F" secondAttribute="leading" constant="16" id="WqJ-DX-9dz"/>
+                                                            <constraint firstItem="aid-Ls-St0" firstAttribute="top" secondItem="ohF-Cx-p5F" secondAttribute="top" constant="16" id="tIv-WX-aKs"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="ohF-Cx-p5F" secondAttribute="bottom" id="FNR-6x-KkA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ohF-Cx-p5F" secondAttribute="trailing" id="n8X-rG-65d"/>
+                                                    <constraint firstItem="ohF-Cx-p5F" firstAttribute="top" secondItem="mlM-yz-fXP" secondAttribute="top" id="pnu-1F-0vu"/>
+                                                    <constraint firstItem="ohF-Cx-p5F" firstAttribute="leading" secondItem="mlM-yz-fXP" secondAttribute="leading" id="uCZ-gv-Muc"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="mlM-yz-fXP" secondAttribute="bottom" id="153-9d-KNH"/>
+                                            <constraint firstItem="mlM-yz-fXP" firstAttribute="top" secondItem="Sid-eA-f3U" secondAttribute="top" id="AF1-Wx-qtA"/>
+                                            <constraint firstItem="mlM-yz-fXP" firstAttribute="leading" secondItem="Sid-eA-f3U" secondAttribute="leading" id="AGu-BK-Pcq"/>
+                                            <constraint firstAttribute="trailing" secondItem="mlM-yz-fXP" secondAttribute="trailing" id="NWD-Hq-BnD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="n9J-aF-eE6" firstAttribute="top" secondItem="Sid-eA-f3U" secondAttribute="top" id="46K-4k-egN"/>
+                                    <constraint firstItem="aSK-d6-OLD" firstAttribute="leading" secondItem="F2K-cS-FTq" secondAttribute="leading" id="7v5-sb-6tR"/>
+                                    <constraint firstItem="aSK-d6-OLD" firstAttribute="top" secondItem="F2K-cS-FTq" secondAttribute="top" id="Hbe-Fb-Rmm"/>
+                                    <constraint firstAttribute="bottom" secondItem="n9J-aF-eE6" secondAttribute="bottom" id="MOE-AJ-OVu"/>
+                                    <constraint firstItem="n9J-aF-eE6" firstAttribute="bottom" secondItem="Sid-eA-f3U" secondAttribute="bottom" id="MVq-2G-QLp"/>
+                                    <constraint firstItem="aSK-d6-OLD" firstAttribute="trailing" secondItem="Sid-eA-f3U" secondAttribute="trailing" id="P7b-Qh-lnM"/>
+                                    <constraint firstAttribute="width" constant="1024" id="TQE-LS-C2t"/>
+                                    <constraint firstItem="Sid-eA-f3U" firstAttribute="leading" secondItem="F2K-cS-FTq" secondAttribute="leading" constant="218" id="XyX-VW-Nr0"/>
+                                    <constraint firstItem="aSK-d6-OLD" firstAttribute="leading" secondItem="n9J-aF-eE6" secondAttribute="leading" id="YXa-aI-dvM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sid-eA-f3U" secondAttribute="trailing" id="ZXX-Dg-Upn"/>
+                                    <constraint firstAttribute="height" constant="469" id="bd7-gq-Xi6"/>
+                                    <constraint firstItem="Sid-eA-f3U" firstAttribute="leading" secondItem="n9J-aF-eE6" secondAttribute="trailing" id="fMW-V9-T5K"/>
+                                    <constraint firstItem="n9J-aF-eE6" firstAttribute="top" secondItem="aSK-d6-OLD" secondAttribute="bottom" id="tQX-z4-OPr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Hy-mU-fLz" firstAttribute="top" secondItem="qRA-8G-WwR" secondAttribute="bottom" constant="-20" id="0ZF-an-4Fd"/>
+                            <constraint firstItem="8Hy-mU-fLz" firstAttribute="top" secondItem="nUw-H5-C3f" secondAttribute="topMargin" id="5Yq-Bm-Jwh"/>
+                            <constraint firstItem="F2K-cS-FTq" firstAttribute="leading" secondItem="qLz-MH-NGu" secondAttribute="leading" id="Cb9-yh-s2E"/>
+                            <constraint firstItem="8Hy-mU-fLz" firstAttribute="leading" secondItem="qLz-MH-NGu" secondAttribute="leading" id="XZ0-pV-D1D"/>
+                            <constraint firstItem="qLz-MH-NGu" firstAttribute="top" secondItem="F2K-cS-FTq" secondAttribute="bottom" id="ZYv-Xd-Eln"/>
+                            <constraint firstItem="EHY-Ks-IWA" firstAttribute="leading" secondItem="qRA-8G-WwR" secondAttribute="leading" id="e9l-Oj-kvv"/>
+                            <constraint firstItem="qLz-MH-NGu" firstAttribute="top" secondItem="8Hy-mU-fLz" secondAttribute="bottom" id="spk-vi-EGr"/>
+                            <constraint firstItem="F2K-cS-FTq" firstAttribute="top" secondItem="EHY-Ks-IWA" secondAttribute="bottom" id="uee-A7-UFE"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="8Hy-mU-fLz" id="dWQ-dV-Edd"/>
+                        <outlet property="carousel" destination="EHY-Ks-IWA" id="cO2-Kk-7iD"/>
+                        <outlet property="leagueLabel" destination="4m7-5u-a0N" id="6n9-KU-CYr"/>
+                        <outlet property="mainBarView" destination="zdW-VS-pga" id="XPa-fC-Zpn"/>
+                        <outlet property="tabContentContainerView" destination="mlM-yz-fXP" id="FPg-PX-78f"/>
+                        <outlet property="teamLabel" destination="KE2-ZJ-ho0" id="ZFu-Ig-d4a"/>
+                        <outlet property="teamsBarView" destination="n9J-aF-eE6" id="xdm-aY-bLf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u9e-OM-te2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-573" y="-2960"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Gym_Cropped.jpg" width="947" height="615"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination">
+            <size key="portraitSize" width="768" height="1024"/>
+            <size key="landscapeSize" width="1024" height="768"/>
+        </simulatedScreenMetrics>
+    </simulatedMetricsContainer>
+</document>

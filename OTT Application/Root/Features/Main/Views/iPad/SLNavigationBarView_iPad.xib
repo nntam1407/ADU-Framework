@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6205" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SLNavigationBarView">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0Q-ql-EAb">
+                    <rect key="frame" x="59" y="1" width="906" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="906" id="a2n-Ow-CMh"/>
+                    </constraints>
+                    <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7X-cE-Bh6">
+                    <rect key="frame" x="0.0" y="9" width="30" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="qB4-PA-LbV"/>
+                    </constraints>
+                    <state key="normal" image="btn_menu_red.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view alpha="0.74999999999999978" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QaO-ws-XHX">
+                    <rect key="frame" x="39" y="0.0" width="1" height="44"/>
+                    <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="07x-zJ-dHx"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="1" id="MA7-0E-3Gg"/>
+                        <constraint firstAttribute="width" constant="1" id="Vbc-zQ-4OT"/>
+                        <constraint firstAttribute="height" constant="44" id="XxC-A5-cv9"/>
+                    </constraints>
+                </view>
+                <view alpha="0.74999999999999978" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdw-yI-aGh">
+                    <rect key="frame" x="984" y="0.0" width="1" height="44"/>
+                    <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="1" id="4zl-VV-UQC"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="1" id="7Af-ci-uPR"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="Rg9-7x-j0d"/>
+                        <constraint firstAttribute="width" constant="1" id="Xvf-Uy-4bI"/>
+                        <constraint firstAttribute="height" constant="44" id="Xzk-in-8n3"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="gnL-ba-fbe"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPv-zM-WxE">
+                    <rect key="frame" x="994" y="7" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="PpQ-Pw-4Mh"/>
+                    </constraints>
+                    <state key="normal" image="btn_SL_logo.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="d0Q-ql-EAb" firstAttribute="bottom" secondItem="pdw-yI-aGh" secondAttribute="bottom" constant="1" id="6K3-tB-diM"/>
+                <constraint firstItem="DPv-zM-WxE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="8QL-mz-z8V"/>
+                <constraint firstItem="DPv-zM-WxE" firstAttribute="leading" secondItem="pdw-yI-aGh" secondAttribute="trailing" constant="9" id="9aw-Xx-HvL"/>
+                <constraint firstItem="QaO-ws-XHX" firstAttribute="leading" secondItem="O7X-cE-Bh6" secondAttribute="trailing" constant="9" id="BYw-1e-7wD"/>
+                <constraint firstItem="QaO-ws-XHX" firstAttribute="leading" secondItem="O7X-cE-Bh6" secondAttribute="trailing" constant="9" id="EKf-Ve-ZNt"/>
+                <constraint firstItem="O7X-cE-Bh6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" id="FEU-gQ-hw0"/>
+                <constraint firstAttribute="trailing" secondItem="DPv-zM-WxE" secondAttribute="trailing" id="FZi-4g-Ppu"/>
+                <constraint firstAttribute="bottom" secondItem="O7X-cE-Bh6" secondAttribute="bottom" constant="10" id="JSg-tj-usc"/>
+                <constraint firstItem="pdw-yI-aGh" firstAttribute="leading" secondItem="d0Q-ql-EAb" secondAttribute="trailing" constant="19" id="N6L-Ck-JDF"/>
+                <constraint firstItem="QaO-ws-XHX" firstAttribute="bottom" secondItem="d0Q-ql-EAb" secondAttribute="bottom" constant="-1" id="Qnv-ME-3CR"/>
+                <constraint firstItem="pdw-yI-aGh" firstAttribute="top" secondItem="d0Q-ql-EAb" secondAttribute="top" constant="-1" id="VZP-7l-6YT"/>
+                <constraint firstItem="d0Q-ql-EAb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="XyG-6x-66p"/>
+                <constraint firstAttribute="trailing" secondItem="DPv-zM-WxE" secondAttribute="trailing" id="bZB-Pl-sBD"/>
+                <constraint firstItem="pdw-yI-aGh" firstAttribute="centerY" secondItem="DPv-zM-WxE" secondAttribute="centerY" id="f0S-Yi-hzN"/>
+                <constraint firstItem="QaO-ws-XHX" firstAttribute="leading" secondItem="O7X-cE-Bh6" secondAttribute="trailing" constant="9" id="f6u-v3-rmY"/>
+                <constraint firstItem="d0Q-ql-EAb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lzb-Ea-ehK"/>
+                <constraint firstItem="O7X-cE-Bh6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qLT-MA-4EE"/>
+                <constraint firstItem="O7X-cE-Bh6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="uEx-xO-Vyz"/>
+                <constraint firstItem="DPv-zM-WxE" firstAttribute="leading" secondItem="pdw-yI-aGh" secondAttribute="trailing" constant="9" id="uam-JE-NPE"/>
+                <constraint firstItem="O7X-cE-Bh6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" id="v5M-Ax-oNJ"/>
+                <constraint firstItem="DPv-zM-WxE" firstAttribute="leading" secondItem="pdw-yI-aGh" secondAttribute="trailing" constant="9" id="wLB-hp-tVf"/>
+                <constraint firstItem="QaO-ws-XHX" firstAttribute="leading" secondItem="O7X-cE-Bh6" secondAttribute="trailing" constant="9" id="wqA-yJ-4b6"/>
+                <constraint firstItem="d0Q-ql-EAb" firstAttribute="leading" secondItem="QaO-ws-XHX" secondAttribute="trailing" constant="19" id="y7o-na-yGp"/>
+                <constraint firstItem="QaO-ws-XHX" firstAttribute="top" secondItem="d0Q-ql-EAb" secondAttribute="top" constant="-1" id="yIV-Ub-uRj"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="searchBar" destination="d0Q-ql-EAb" id="2rY-dd-v9E"/>
+            </connections>
+            <point key="canvasLocation" x="-40" y="-397"/>
+        </view>
+        <searchDisplayController id="G9q-Ri-qs8">
+            <connections>
+                <outlet property="searchBar" destination="d0Q-ql-EAb" id="mhW-Yh-z3K"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+    <resources>
+        <image name="btn_SL_logo.png" width="30" height="30"/>
+        <image name="btn_menu_red.png" width="29" height="23"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination">
+            <size key="portraitSize" width="768" height="1024"/>
+            <size key="landscapeSize" width="1024" height="768"/>
+        </simulatedScreenMetrics>
+    </simulatedMetricsContainer>
+</document>

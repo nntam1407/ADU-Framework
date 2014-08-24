@@ -1,0 +1,5 @@
+#include "Pods-SportLocker-AFDownloadRequestOperation.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/AFDownloadRequestOperation" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/ABContactHelper" "${PODS_ROOT}/Headers/AFDownloadRequestOperation" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/Bolts" "${PODS_ROOT}/Headers/CMPopTipView" "${PODS_ROOT}/Headers/EasyTableView" "${PODS_ROOT}/Headers/FTCoreText" "${PODS_ROOT}/Headers/FXBlurView" "${PODS_ROOT}/Headers/FXImageView" "${PODS_ROOT}/Headers/Facebook-iOS-SDK" "${PODS_ROOT}/Headers/Facebook-iOS-SDK/FacebookSDK" "${PODS_ROOT}/Headers/JSBadgeView" "${PODS_ROOT}/Headers/JSONKit" "${PODS_ROOT}/Headers/JSONModel" "${PODS_ROOT}/Headers/KKGridView" "${PODS_ROOT}/Headers/MTStatusBarOverlay" "${PODS_ROOT}/Headers/MagicalRecord" "${PODS_ROOT}/Headers/PKRevealController" "${PODS_ROOT}/Headers/Reachability" "${PODS_ROOT}/Headers/SDWebImage" "${PODS_ROOT}/Headers/SVProgressHUD" "${PODS_ROOT}/Headers/UIImage+Additions" "${PODS_ROOT}/Headers/iCarousel"
+OTHER_LDFLAGS = -ObjC
+PODS_ROOT = ${SRCROOT}
