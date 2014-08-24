@@ -1,0 +1,73 @@
+* Remove all empty directories in current dir
+find . -type d -empty -print0 | xargs -0 -I {} /bin/rmdir "{}"
+
+* Export GIT 
+Probably the simplest way to achieve this is with git archive. If you really need just the expanded tree you can do something like this.
+
+git archive master | tar -x -C /somewhere/else
+Most of the time that I need to 'export' something from git, I want a compressed archive in any case so I do something like this.
+
+git archive master | bzip2 >source-tree.tar.bz2
+
+* Reset Paralels Desktop 8
+rm -rfd ~/library/preferences/com.parallels*
+rm -rfd ~/library/preferences/parallels/*
+rm -rfd ~/library/preferences/parallels
+sudo -s rm -rfd /private/var/db/parallels/stats/*
+sudo -s rm -rfd /private/var/db/parallels/stats
+sudo -s rm -rfd /private/var/db/parallels
+sudo -s rm -rfd /library/logs/parallels.log
+sudo -s rm -rfd /library/preferences/parallels/*
+sudo -s rm -rfd /library/preferences/parallels
+sudo -s rm -rfd /private/var/db/parallels
+sudo -s rm -rfd /private/var/.parallels_swap
+sudo -s rm -rfd /private/var/db/receipts/'com.parallels*'
+sudo -s rm -rfd /private/tmp/qtsingleapp-*-lockfile
+sudo -s rm -rfd /private/tmp/com.apple.installer*/*
+sudo -s rm -rfd /private/tmp/com.apple.installer*
+sudo -s rm -rfd /private/var/root/library/preferences/com.parallels.desktop.plist
+sudo rm -fr ~/Library/Logs/parallels.log
+sudo rm -fr /Library/Preferences/Parallels/
+sudo rm -fr ~/Library/Preferences/Parallels
+sudo rm -fr /private/var/.Parallels_swap
+sudo rm -fr /private/var/db/Parallels/Stats
+sudo rm -fr /private/tmp/qtsingleapp-Parall-c0ce-0-lockfile
+sudo rm -fr ~/Library/Preferences/com.parallels
+
+**********************************************************************************
+* COCOAPODS
+**********************************************************************************
+* Check rvm version first, if it's damaged, just reinstall it
+rvm implode
+gem uninstall rvm
+rm -f /etc/rvmrc
+rm -f ~/.rvmrc
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
+
+* Set gem PATH
+export GEM_HOME=$HOME/gems
+export PATH=$GEM_HOME/bin:$PATH
+
+* Fix problem with the new xcode version installed
+
+1. Open Xcode 6
+2. Open Preferences > Click the Locations tab > Change the Command Line Tools version to Xcode 6.0
+3. Uninstall cocoapods
+ $ sudo gem uninstall cocoapods
+
+4. Install xcodeproj
+ $ sudo gem install xcodeproj
+
+5. Install cocoapods
+ $ sudo gem install cocoapods
+
+6. Run pod --version to verify that it worked
+
+* Install/Upgrade RubyGem
+sudo gem update --system //update gem system ruby
+sudo gem uninstall cocoapods
+sudo gem install cocoapods // install cocoapods
+pod setup  // setting up pod
+
+* Update pods:
+pod update
